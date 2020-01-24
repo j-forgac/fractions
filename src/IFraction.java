@@ -19,7 +19,7 @@ public interface IFraction {
      * @return new instance of IFraction representing the result
      */
     @NotNull
-    IFraction add(@NotNull IFraction other);
+    IFraction plus(@NotNull IFraction other);
 
     /**
      * @param other fraction

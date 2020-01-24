@@ -24,7 +24,7 @@ public class Fraction implements IFraction {
 
     @Override
     @NotNull
-    public IFraction add(@NotNull IFraction other) {
+    public IFraction plus(@NotNull IFraction other) {
         //TODO implement
     }
 
