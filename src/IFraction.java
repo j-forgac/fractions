@@ -1,35 +1,44 @@
+import com.sun.istack.internal.NotNull;
+
 public interface IFraction {
 
     /**
      * @return the upper part of the fraction
      */
+    @NotNull
     Integer getNumerator();
 
     /**
      * @return the bottom part of the fraction
      */
+    @NotNull
     Integer getDenominator();
 
     /**
      * @param other fraction
      * @return new instance of IFraction representing the result
      */
-    IFraction add(IFraction other);
-    /**
-     * @param other fraction
-     * @return new instance of IFraction representing the result
-     */
-    IFraction minus(IFraction other);
+    @NotNull
+    IFraction add(@NotNull IFraction other);
 
     /**
      * @param other fraction
      * @return new instance of IFraction representing the result
      */
-    IFraction times(IFraction other);
+    @NotNull
+    IFraction minus(@NotNull IFraction other);
 
     /**
      * @param other fraction
      * @return new instance of IFraction representing the result
      */
-    IFraction dividedBy(IFraction other);
+    @NotNull
+    IFraction times(@NotNull IFraction other);
+
+    /**
+     * @param other fraction
+     * @return new instance of IFraction representing the result
+     */
+    @NotNull
+    IFraction dividedBy(@NotNull IFraction other);
 }

@@ -11,38 +11,39 @@ public class Fraction implements IFraction {
     }
 
     @Override
-    public @NotNull
-    Integer getNumerator() {
+    @NotNull
+    public Integer getNumerator() {
         return numerator;
     }
 
     @Override
-    public @NotNull
-    Integer getDenominator() {
-        return null;
+    @NotNull
+    public Integer getDenominator() {
+        return denominator;
     }
 
     @Override
-    public @NotNull
-    IFraction add(@NotNull IFraction other) {
-        return new Fraction(other.getNumerator(), other.getDenominator());
+    @NotNull
+    public IFraction add(@NotNull IFraction other) {
+        //TODO implement
     }
 
     @Override
-    public @NotNull
-    IFraction minus(@NotNull IFraction other) {
-        return null;
+    @NotNull
+    public IFraction minus(@NotNull IFraction other) {
+        //TODO return with base ratio
+        return new Fraction(numerator * other.getNumerator(), denominator * getDenominator());
     }
 
     @Override
-    public @NotNull
-    IFraction times(@NotNull IFraction other) {
-        return null;
+    @NotNull
+    public IFraction times(@NotNull IFraction other) {
+        //TODO implement
     }
 
     @Override
-    public @NotNull
-    IFraction dividedBy(@NotNull IFraction other) {
-        return null;
+    @NotNull
+    public IFraction dividedBy(@NotNull IFraction other) {
+        //TODO implement
     }
 }
